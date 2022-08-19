@@ -4,15 +4,13 @@ import android.app.Activity
 import android.content.Context
 import android.graphics.Color
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.util.TypedValue
-import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.core.view.*
+import androidx.core.view.WindowCompat
 import com.example.ottanimate.databinding.ActivityMainBinding
 import com.google.android.material.appbar.AppBarLayout
 import kotlin.math.abs
