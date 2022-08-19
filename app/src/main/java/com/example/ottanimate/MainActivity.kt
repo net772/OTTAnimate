@@ -41,11 +41,6 @@ class MainActivity : AppCompatActivity() {
         initAppBar()
         initScrollViewListeners()
         initMotionLayoutListeners()
-        val samplePx = this@MainActivity.navigationHeight()
-        val density = resources.displayMetrics.density
-        val value = (samplePx / density).toInt()
-        Log.d("동현","123 :${ value }")
-
     }
 
     /** 툴바를 상태바 밑에서 시작되도록 bottomMargin  */
@@ -53,9 +48,6 @@ class MainActivity : AppCompatActivity() {
         toolbarContainer.layoutParams = (toolbarContainer.layoutParams as ViewGroup.MarginLayoutParams).apply {
                 setMargins(0, this@MainActivity.statusBarHeight(), 0, 0)
             }
-//            collapsingToolbarContainer.layoutParams = (collapsingToolbarContainer.layoutParams as ViewGroup.MarginLayoutParams).apply {
-//                setMargins(0, 0, 0, 0)
-//            }
     }
 
     /** appBar 투명도 조절 */
@@ -156,4 +148,4 @@ fun MotionLayout.setTransitionListener(started: () -> Unit = {}, completed: (Int
         override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) = Unit
         override fun onTransitionCompleted(p0: MotionLayout?, currentId: Int) = completed(currentId)
         override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) = Unit
-    })ㅁㅁ
+    })
