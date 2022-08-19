@@ -11,7 +11,7 @@
         <KeyFrameSet>
 
             <KeyAttribute
-                motion:framePosition="100"
+                motion:framePosition="0"
                 motion:motionTarget="@id/button"
                 motion:transitionEasing="decelerate"
                 android:alpha="0"/>
