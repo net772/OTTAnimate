@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         initActivity()
     }
 
+    override fun onDestroy() {
+        mBinding = null
+        super.onDestroy()
+    }
+
     private fun initActivity() {
         setStatusBarTransparent()
         initInsetMargin()
